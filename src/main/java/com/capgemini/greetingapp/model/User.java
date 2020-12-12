@@ -15,7 +15,9 @@ public class User {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	
-
-
+	@Override
+	public String toString() {
+		String name = (this.firstName != null ? this.firstName : "") + " " + (this.lastName != null ? this.lastName : "");
+		return name;
+	}
 }
